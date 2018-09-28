@@ -19,7 +19,7 @@ namespace ConsoleApp1
             int count=1;
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine("ok" + i);
+               // Console.WriteLine("ok" + i);
                 
                 if (i+1<arr.Length && arr[i] == arr[i + 1] )
                 {
@@ -27,7 +27,15 @@ namespace ConsoleApp1
                 }
                 else
                 {
-                    Console.WriteLine(arr[i] + "   count"+count);
+                    if(count==1)
+                    {
+                        Console.Write(arr[i]);
+                    }
+                    else
+                    {
+                    Console.Write(arr[i] + ""+count);
+                    }
+
                     count = 0;
                     count++;
                 }
